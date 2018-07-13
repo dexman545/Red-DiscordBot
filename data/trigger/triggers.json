@@ -1,0 +1,19 @@
+[
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "guilty",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "no name change",
+            "the end"
+        ],
+        "server" : "463367127315906560",
+        "triggered" : 1,
+        "triggered_by" : "name change",
+        "type" : "all"
+    }
+]

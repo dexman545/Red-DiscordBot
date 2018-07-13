@@ -1,0 +1,124 @@
+[12/07/2018 20:20] ERROR owner load 74: extension does not have a setup function
+Traceback (most recent call last):
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 736, in load_extension
+    raise discord.ClientException('extension does not have a setup function')
+discord.errors.ClientException: extension does not have a setup function
+[12/07/2018 20:21] ERROR owner load 74: No module named 'cogs.utils.menu'
+Traceback (most recent call last):
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "D:\Programs\Python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\desutils.py", line 4, in <module>
+    from .utils.menu import *
+ModuleNotFoundError: No module named 'cogs.utils.menu'
+[12/07/2018 20:23] ERROR red load_cogs 573: No module named 'cogs.utils.menu'
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "D:\Programs\Python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\desutils.py", line 4, in <module>
+    from .utils.menu import *
+ModuleNotFoundError: No module named 'cogs.utils.menu'
+[12/07/2018 20:23] ERROR red load_cogs 573: You don't have Pillow installed, run
+```pip3 install pillow```And try again
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\identicon.py", line 298, in setup
+    raise RuntimeError("You don't have Pillow installed, run\n```pip3 install pillow```And try again")
+RuntimeError: You don't have Pillow installed, run
+```pip3 install pillow```And try again
+[12/07/2018 20:23] ERROR red load_cogs 573: extension does not have a setup function
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 736, in load_extension
+    raise discord.ClientException('extension does not have a setup function')
+discord.errors.ClientException: extension does not have a setup function
+[12/07/2018 21:35] ERROR red load_cogs 573: You need to run `pip3 install pillow`
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\spoiler.py", line 111, in setup
+    raise RuntimeError("You need to run `pip3 install pillow`")
+RuntimeError: You need to run `pip3 install pillow`
+[12/07/2018 21:45] ERROR owner load 74: No module named 'cogs.utils.menu'
+Traceback (most recent call last):
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "D:\Programs\Python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\desutils.py", line 4, in <module>
+    from .utils.menu import *
+ModuleNotFoundError: No module named 'cogs.utils.menu'
+[12/07/2018 21:48] ERROR owner load 74: You don't have Pillow installed, run
+```pip3 install pillow```And try again
+Traceback (most recent call last):
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\identicon.py", line 298, in setup
+    raise RuntimeError("You don't have Pillow installed, run\n```pip3 install pillow```And try again")
+RuntimeError: You don't have Pillow installed, run
+```pip3 install pillow```And try again
+[12/07/2018 21:48] ERROR owner load 74: You need to run `pip3 install pillow`
+Traceback (most recent call last):
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\spoiler.py", line 111, in setup
+    raise RuntimeError("You need to run `pip3 install pillow`")
+RuntimeError: You need to run `pip3 install pillow`
+[12/07/2018 22:58] ERROR red on_command_error 369: Exception in command 'welcomeset'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\welcome.py", line 34, in welcomeset
+    self.settings[server.id]["CHANNEL"] = server.default_channel.id
+AttributeError: 'NoneType' object has no attribute 'id'

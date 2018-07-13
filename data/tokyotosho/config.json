@@ -1,0 +1,12 @@
+{
+    "check_interval" : 120,
+    "comment_length" : 120,
+    "ignore" : [],
+    "items_per_message" : 8,
+    "timeout" : 8,
+    "urls" : [
+        "https://www.tokyotosho.info/",
+        "http://tokyotosho.se/",
+        "http://tokyo-tosho.net/"
+    ]
+}
