@@ -28,6 +28,7 @@
     "cogs.kill" : true,
     "cogs.language" : true,
     "cogs.latex" : true,
+    "cogs.leveler" : false,
     "cogs.logger" : true,
     "cogs.maolmao" : true,
     "cogs.menu" : false,

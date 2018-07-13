@@ -200,3 +200,216 @@ Traceback (most recent call last):
   File "lib\discord\http.py", line 200, in request
     raise HTTPException(r, data)
 discord.errors.HTTPException: BAD REQUEST (status code: 400): Cannot send an empty message
+[13/07/2018 02:40] ERROR red on_command_error 369: Exception in command 'trigger create'
+Traceback (most recent call last):
+  File "lib\aiohttp\connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "D:\Programs\Python\lib\asyncio\base_events.py", line 802, in create_connection
+    sock, protocol_factory, ssl, server_hostname)
+  File "D:\Programs\Python\lib\asyncio\base_events.py", line 828, in _create_connection_transport
+    yield from waiter
+  File "D:\Programs\Python\lib\asyncio\selector_events.py", line 724, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "lib\aiohttp\connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "lib\aiohttp\connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "lib\aiohttp\connector.py", line 624, in _create_direct_connection
+    (req.host, req.port, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10054] Can not connect to discordapp.com:443 [An existing connection was forcibly closed by the remote host]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\trigger.py", line 59, in create
+    await self.interactive_add_mode(trigger, ctx)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\trigger.py", line 461, in interactive_add_mode
+    await self.bot.say("Your changes have been saved.")
+  File "lib\discord\ext\commands\bot.py", line 309, in _augmented_msg
+    msg = yield from coro
+  File "red.py", line 92, in send_message
+    return await super().send_message(*args, **kwargs)
+  File "lib\discord\client.py", line 1151, in send_message
+    data = yield from self.http.send_message(channel_id, content, guild_id=guild_id, tts=tts, embed=embed)
+  File "lib\discord\http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib\aiohttp\client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "lib\aiohttp\connector.py", line 314, in connect
+    .format(key, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10054] Cannot connect to host discordapp.com:443 ssl:True [Can not connect to discordapp.com:443 [An existing connection was forcibly closed by the remote host]]
+[13/07/2018 02:45] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib\aiohttp\client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "lib\aiohttp\client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "lib\aiohttp\streams.py", line 641, in read
+    result = yield from super().read()
+  File "lib\aiohttp\streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "D:\Programs\Python\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 599, in main
+    bot=not bot.settings.self_bot)
+  File "lib\discord\client.py", line 416, in login
+    yield from getattr(self, '_login_' + str(n))(*args, **kwargs)
+  File "lib\discord\client.py", line 346, in _login_1
+    data = yield from self.http.static_login(token, bot=is_bot)
+  File "lib\discord\http.py", line 258, in static_login
+    data = yield from self.request(Route('GET', '/users/@me'))
+  File "lib\discord\http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib\aiohttp\client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+[13/07/2018 02:46] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib\websockets\client.py", line 63, in read_http_response
+    status_code, headers = yield from read_response(self.reader)
+  File "lib\websockets\http.py", line 119, in read_response
+    status_line = yield from read_line(stream)
+  File "lib\websockets\http.py", line 195, in read_line
+    raise ValueError("Line without CRLF")
+ValueError: Line without CRLF
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "D:\Programs\Python\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 603, in main
+    yield from bot.connect()
+  File "lib\discord\client.py", line 444, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self)
+  File "lib\discord\gateway.py", line 202, in from_client
+    timeout=60, loop=client.loop)
+  File "D:\Programs\Python\lib\asyncio\tasks.py", line 352, in wait_for
+    return fut.result()
+  File "lib\discord\gateway.py", line 60, in _ensure_coroutine_connect
+    ws = yield from websockets.connect(gateway, loop=loop, klass=klass)
+  File "lib\websockets\py35\client.py", line 19, in __await__
+    return (yield from self.client)
+  File "lib\websockets\client.py", line 215, in connect
+    extra_headers=extra_headers)
+  File "lib\websockets\client.py", line 121, in handshake
+    status_code, headers = yield from self.read_http_response()
+  File "lib\websockets\client.py", line 65, in read_http_response
+    raise InvalidMessage("Malformed HTTP message") from exc
+websockets.exceptions.InvalidMessage: Malformed HTTP message
+[13/07/2018 02:47] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib\aiohttp\client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "lib\aiohttp\client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "lib\aiohttp\streams.py", line 641, in read
+    result = yield from super().read()
+  File "lib\aiohttp\streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "D:\Programs\Python\lib\asyncio\base_events.py", line 466, in run_until_complete
+    return future.result()
+  File "red.py", line 599, in main
+    bot=not bot.settings.self_bot)
+  File "lib\discord\client.py", line 416, in login
+    yield from getattr(self, '_login_' + str(n))(*args, **kwargs)
+  File "lib\discord\client.py", line 346, in _login_1
+    data = yield from self.http.static_login(token, bot=is_bot)
+  File "lib\discord\http.py", line 258, in static_login
+    data = yield from self.request(Route('GET', '/users/@me'))
+  File "lib\discord\http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib\aiohttp\client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+[13/07/2018 03:49] ERROR owner load 74: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it
+Traceback (most recent call last):
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\leveler.py", line 3284, in setup
+    n = Leveler(bot)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\leveler.py", line 61, in __init__
+    dbs = client.database_names()
+  File "lib\pymongo\mongo_client.py", line 1677, in database_names
+    return self.list_database_names(session)
+  File "lib\pymongo\mongo_client.py", line 1659, in list_database_names
+    for doc in self.list_databases(session, nameOnly=True)]
+  File "lib\pymongo\mongo_client.py", line 1640, in list_databases
+    res = admin.command(cmd, session=session)
+  File "lib\pymongo\database.py", line 611, in command
+    read_preference) as (sock_info, slave_ok):
+  File "D:\Programs\Python\lib\contextlib.py", line 82, in __enter__
+    return next(self.gen)
+  File "lib\pymongo\mongo_client.py", line 1099, in _socket_for_reads
+    server = topology.select_server(read_preference)
+  File "lib\pymongo\topology.py", line 224, in select_server
+    address))
+  File "lib\pymongo\topology.py", line 183, in select_servers
+    selector, server_timeout, address)
+  File "lib\pymongo\topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it
+[13/07/2018 03:53] ERROR red load_cogs 573: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\leveler.py", line 3284, in setup
+    n = Leveler(bot)
+  File "D:\Programs\Discord Bot\Red-DiscordBot\cogs\leveler.py", line 61, in __init__
+    dbs = client.database_names()
+  File "lib\pymongo\mongo_client.py", line 1677, in database_names
+    return self.list_database_names(session)
+  File "lib\pymongo\mongo_client.py", line 1659, in list_database_names
+    for doc in self.list_databases(session, nameOnly=True)]
+  File "lib\pymongo\mongo_client.py", line 1640, in list_databases
+    res = admin.command(cmd, session=session)
+  File "lib\pymongo\database.py", line 611, in command
+    read_preference) as (sock_info, slave_ok):
+  File "D:\Programs\Python\lib\contextlib.py", line 82, in __enter__
+    return next(self.gen)
+  File "lib\pymongo\mongo_client.py", line 1099, in _socket_for_reads
+    server = topology.select_server(read_preference)
+  File "lib\pymongo\topology.py", line 224, in select_server
+    address))
+  File "lib\pymongo\topology.py", line 183, in select_servers
+    selector, server_timeout, address)
+  File "lib\pymongo\topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it

@@ -1,0 +1,11 @@
+{
+    "badge_type" : "circles",
+    "bg_price" : 0,
+    "chat_cooldown" : 120,
+    "disabled_servers" : [],
+    "lvl_msg" : [],
+    "mention" : true,
+    "rep_cooldown" : 43200,
+    "server_roles" : {},
+    "text_only" : []
+}

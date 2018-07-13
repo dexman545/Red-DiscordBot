@@ -445,7 +445,7 @@
             "folder" : "data\\downloader\\Maybe-Useful-Cogs\\latex"
         },
         "leveler" : {
-            "INSTALLED" : false,
+            "INSTALLED" : true,
             "file" : "data\\downloader\\Maybe-Useful-Cogs\\leveler\\leveler.py",
             "folder" : "data\\downloader\\Maybe-Useful-Cogs\\leveler"
         },
