@@ -1,4 +1,4 @@
-pip
+pip>=10.0.1
 git+git://github.com/Rapptz/discord.py.git#egg=discord.py[voice]
 youtube_dl
 imgurpython
