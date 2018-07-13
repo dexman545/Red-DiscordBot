@@ -1,1 +1,1 @@
-worker: launcher.py --start --auto-restart
+worker: python launcher.py --start --auto-restart
