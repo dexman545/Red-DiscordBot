@@ -1,1 +1,1 @@
-worker: python3 launcher.py --start --auto-restart
+worker: start_red_autorestart.bat
