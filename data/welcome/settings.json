@@ -1,4 +1,15 @@
 {
+    "446002850699542529" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : "446002852742037505",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!",
+            "Welcome to {1.name}, {0.name}! This was made to replace the MSXD channel in Trashscan's server, and to host games! Have fun!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
     "463367127315906560" : {
         "BOTS_MSG" : null,
         "BOTS_ROLE" : null,

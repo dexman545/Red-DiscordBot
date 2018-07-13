@@ -1,4 +1,20 @@
 {
+    "446002850699542529" : {
+        "459186419248660483" : {
+            "manga" : {
+                "last" : "Erito \u03a9 Wa Yoru ni Oborete - Volume 1, Chapter 3",
+                "template" : "<:suddenly:461356160319094786> $title has been updated!\n$summary\n$link",
+                "url" : "https://siftrss.com/f/5yq8JabBkW"
+            }
+        },
+        "460172545417543701" : {
+            "anime" : {
+                "last" : "Kakuriyo -Bed & Breakfast for Spirits- Episode 13 English Dubbed",
+                "template" : "<:suddenly:461356160319094786> *$title* has been updated!\n$link",
+                "url" : "https://www.watchcartoononline.com/feed"
+            }
+        }
+    },
     "463367127315906560" : {
         "467169748954906644" : {
             "msxd" : {
