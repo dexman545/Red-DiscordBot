@@ -111,5 +111,21 @@
         "triggered" : 4,
         "triggered_by" : "Mr. Fabulous",
         "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "stupidCat",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: Mr.Fabulous.png"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "Mr. Fabulous.",
+        "type" : "all"
     }
 ]
