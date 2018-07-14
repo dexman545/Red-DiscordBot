@@ -89,7 +89,7 @@
         "owner" : "146039422415011840",
         "regex" : false,
         "responses" : [
-            "NO NAME CHANGE!"
+            "file: no.jpg"
         ],
         "server" : "446002850699542529",
         "triggered" : 4,
@@ -101,7 +101,7 @@
         "case_sensitive" : false,
         "channels" : {},
         "cooldown" : 1,
-        "name" : "stupidCat",
+        "name" : "MrFabulous",
         "owner" : "146039422415011840",
         "regex" : false,
         "responses" : [
@@ -117,7 +117,7 @@
         "case_sensitive" : false,
         "channels" : {},
         "cooldown" : 1,
-        "name" : "stupidCat",
+        "name" : "MrFabulous2",
         "owner" : "146039422415011840",
         "regex" : false,
         "responses" : [
@@ -126,6 +126,166 @@
         "server" : "446002850699542529",
         "triggered" : 4,
         "triggered_by" : "Mr. Fabulous.",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "slamCalm",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: calmspell.jpg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "ice and ac",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "mathHard",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: mathhard.jpg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "failure",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "forMe",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: pinglife.png"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "I was pinged?",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "foreverAlone",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: foreveralone2.jpeg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "valentine",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "foreverAlone2",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: foreveralone.jpg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "#foreverAlone",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "slamPhysics",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: slamPhysics.png"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "slam is bad at physics",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "dontcare",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: dontcare.jpg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "I care enough",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "facepalm",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: facepalm.jpg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "facepalm",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "bear",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: bear.png"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "do my nails",
+        "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "lewd",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "file: handholding.jpg"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "lewd handholding",
         "type" : "all"
     }
 ]
