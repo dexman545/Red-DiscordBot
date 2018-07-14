@@ -79,5 +79,21 @@
         "triggered" : 4,
         "triggered_by" : "stupid cat",
         "type" : "all"
+    },
+    {
+        "active" : true,
+        "case_sensitive" : false,
+        "channels" : {},
+        "cooldown" : 1,
+        "name" : "guilty3",
+        "owner" : "146039422415011840",
+        "regex" : false,
+        "responses" : [
+            "NO NAME CHANGE!"
+        ],
+        "server" : "446002850699542529",
+        "triggered" : 4,
+        "triggered_by" : "change my name",
+        "type" : "all"
     }
 ]
